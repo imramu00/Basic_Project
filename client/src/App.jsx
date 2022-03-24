@@ -4,6 +4,9 @@ import Signup from "./components/Signup";
 import Login from "./components/Login";
 
 function App() {
+  //check if token is already present in the local storage to authenticate the user,
+  //if token is present user is redirected to dashboard
+  //if not user is redirected to login page
   const user = localStorage.getItem("token");
 
   return (
